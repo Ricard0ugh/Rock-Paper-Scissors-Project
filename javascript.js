@@ -12,5 +12,19 @@ function getComputerChoice() {
     }
 }
 
+function getHumanChoice() {
+    let choice = parseInt(prompt("Choose: 1 = Rock, 2 = Paper, 3 = Scissors"));
 
-console.log(getComputerChoice());
+    if (choice === 1) {
+        return "Player: Rock!";
+    }
+    else if (choice === 2) {
+        return "Player: Paper!";
+    }
+    else if (choice === 3) {
+        return "Player: Scissors";
+    }
+}
+
+console.log(getHumanChoice());
+
